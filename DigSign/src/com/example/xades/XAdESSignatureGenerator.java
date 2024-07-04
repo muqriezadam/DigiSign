@@ -15,6 +15,7 @@ import java.util.Scanner;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -154,6 +155,8 @@ public class XAdESSignatureGenerator {
     private static Document loadXMLDocument(File inputFile) throws Exception {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         dbf.setNamespaceAware(true);
+        dbf.setCoalescing(true);
+        dbf.setIgnoringElementContentWhitespace(true);
         DocumentBuilder db = dbf.newDocumentBuilder();
         return db.parse(inputFile);
     }
@@ -172,14 +175,39 @@ public class XAdESSignatureGenerator {
         XadesBesSigningProfile profile = new XadesBesSigningProfile(kdp);
         XadesSigner signer = profile.newSigner();
 
-        new Enveloped(signer).sign(doc.getDocumentElement());
+        // Get the root element
+        Element rootElement = doc.getDocumentElement();
+
+        // Create UBLExtensions element
+        Element ublExtensions = doc.createElementNS("urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", "ext:UBLExtensions");
+        Element ublExtension = doc.createElementNS("urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", "ext:UBLExtension");
+        Element extensionContent = doc.createElementNS("urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2", "ext:ExtensionContent");
+
+        ublExtensions.appendChild(ublExtension);
+        ublExtension.appendChild(extensionContent);
+
+        // Insert UBLExtensions as the first child of the root element
+        rootElement.insertBefore(ublExtensions, rootElement.getFirstChild());
+
+        // Sign the root element
+        new Enveloped(signer).sign(rootElement);
+
+        // Move the signature to the ExtensionContent
+        Element signatureElement = (Element) doc.getElementsByTagNameNS("http://www.w3.org/2000/09/xmldsig#", "Signature").item(0);
+        if (signatureElement != null && signatureElement.getParentNode() != null) {
+            signatureElement.getParentNode().removeChild(signatureElement);
+            extensionContent.appendChild(signatureElement);
+        }
     }
 
     private static void saveSignedDocument(Document doc) throws Exception {
         TransformerFactory tf = TransformerFactory.newInstance();
         Transformer trans = tf.newTransformer();
+        trans.setOutputProperty(OutputKeys.INDENT, "yes");
+        trans.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
         try (FileOutputStream fos = new FileOutputStream("signed_document.xml")) {
             trans.transform(new DOMSource(doc), new StreamResult(fos));
         }
+        System.out.println("Signed document saved as: signed_document.xml");
     }
 }
