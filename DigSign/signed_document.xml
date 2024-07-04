@@ -1,47 +1,655 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><output><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-e67c4b64-f31e-4cd2-8f31-a5a498bb2e38">
-<ds:SignedInfo>
-<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-<ds:Reference Id="xmldsig-e67c4b64-f31e-4cd2-8f31-a5a498bb2e38-ref0" URI="">
-<ds:Transforms>
-<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-</ds:Transforms>
-<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>msKF55FVj1Q9Md8GcZOrCmknfEE1fEghgIxHQn/SGVo=</ds:DigestValue>
-</ds:Reference>
-<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-e67c4b64-f31e-4cd2-8f31-a5a498bb2e38-signedprops">
-<ds:Transforms>
-<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-</ds:Transforms>
-<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-<ds:DigestValue>kW3BpvQ/CJfPMMMKyecrG+gvHekPDxWGH5R5IJqvwII=</ds:DigestValue>
-</ds:Reference>
-</ds:SignedInfo>
-<ds:SignatureValue Id="xmldsig-e67c4b64-f31e-4cd2-8f31-a5a498bb2e38-sigvalue">
-OTW1nlLoWcAJV5USAVvTLGi+a7XgMlkI/pcQxqZww48uzwsLTj6h12g+72tx/lqRkvXKDIWOp5ZH
-iVbbu5BJP3DoAY4fgEZP0dN0tsa8O4AYP7jfFCKeaIPKEc2bPIvGWjsFqFy3edpi4GvMMBQeiWXe
-rUcZD8i7a2lJP61hOv+8az4cl7mT8kEIxphZFlMtSoi6rwsm9nMiobx4TyIeCKR2USGxkiz0njA/
-SAr+uFQ/7Jh44PHD1CbvfRply5SQi2ZNcSxWHaoo88zTHI2TlpJ9n1+ifU863AH/HWwBdVRfaobR
-J/gQsQ8BIu0Fq0hGgAX4OY/rmXG+vZtDyXqBpA==
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-49fefc01-66ab-4927-901c-9d342f3d91d6">
+          
+          <ds:SignedInfo>
+            
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+            
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            
+            <ds:Reference Id="xmldsig-49fefc01-66ab-4927-901c-9d342f3d91d6-ref0" URI="">
+              
+              <ds:Transforms>
+                
+                <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                
+              </ds:Transforms>
+              
+              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+              
+              <ds:DigestValue>EkcMv2PXmXhPKB/RNldFFDZzQDMFWoVQN9FNFY9+xNU=</ds:DigestValue>
+              
+            </ds:Reference>
+            
+            <ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-49fefc01-66ab-4927-901c-9d342f3d91d6-signedprops">
+              
+              <ds:Transforms>
+                
+                <ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                
+              </ds:Transforms>
+              
+              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+              
+              <ds:DigestValue>y+aGwM/Oso0OcE93cls0UHg6/IbGjK6gvIcoJfeziM8=</ds:DigestValue>
+              
+            </ds:Reference>
+            
+          </ds:SignedInfo>
+          
+          <ds:SignatureValue Id="xmldsig-49fefc01-66ab-4927-901c-9d342f3d91d6-sigvalue">
+m9Wzb2doFC1Bf9Iwpo3NEAu31VOrzMk9g8DtoisQ6z6BSx0cJP/O7qFF/t9LTlvj8unpAckwikVp
++cgKnMjvfvijGGyqo+Yc3YLVC6sDf24J6J/drkI7vz1l50kQZ9U4WryseZXIla/qdXXWfNz1u++d
+SjOfs3MCoS+3A2cQ35NuHz+UY/yN27BqQriIFqDGZi1FRz3EcUpp2//a37zZT6qkFjSDqlVbhMKw
+c4zUfTW4w0FVs1joggZTlvuaDXfgcLiok8Z2mFIjVVqTK1jgbavgvIymRjGfA2Y4vWLTIPQcLohw
+i5C1xuQ0dfmBuzBzovv+FPHM5E/k0Ig1qX2j/w==
 </ds:SignatureValue>
-<ds:KeyInfo>
-<ds:X509Data>
-<ds:X509Certificate>
-MIICqzCCAZOgAwIBAgIGAZB+RIN8MA0GCSqGSIb3DQEBCwUAMBYxFDASBgNVBAMMC1Rlc3QgSXNz
-dWVyMB4XDTI0MDcwNDE1MDIxN1oXDTI1MDcwNDE1MDIxN1owFzEVMBMGA1UEAwwMVGVzdCBTdWJq
-ZWN0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlvrfb0fJaAkSIcWY6AFMtqfgL5NQ
-UwdAbhqLZ+7c4yBQ5MEH0SNJZwuO6H3+SBQLxGsesl4TJZh8qOCDYb5DqBxLesW+jOrn0dJXJj62
-kG6CRHgfvv5tw/y+IeCXnSqGeRd3SwFV9NJcfqbN0OffHeXzMF34nLAX5syCSt2toBDhbqNgIYT0
-XXIhNnkCa0AArRG+vwuszdtf2cghSi1QcoEZOMWg83TOHn/MLBlDK/5OzdLQX3ihZB2WH5WaL3of
-EElzXS1jehywYRUBsxyHVhiS+uvBW4ms9AfZNaLwpk/fbfJzRDsF6irmAq/eK/8suSGlcRIyzUUx
-NEeQ56QICwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBLC3LJvS8ZJq16m/2Od2hRbxFZGYbR/RY5
-RiR/RlwIvCMDVgMPpkMT8fPoNc84ZcUnvh3D7Amh3MntMyNbcybCKx8kCCq5dUEEWgSXGNgupjHY
-CS4jH8BKJg3+aoZUJWkTgdAUHk4+4OwMqf2DgW8wdyERH96Vp+gMONC8ZghOBichgxld3W4KOfeT
-zUQml3BGmCy9avS79K+gFlzGJu1LBx408zmcvccWEO7GLmS65nBSjCMfIV2Ws+wkkiN+pHJpNHsH
-ZttsU7ujH9gpE/ZX127U7uR+u01itRA88+Veld6E+uWrtsmNzk8qQ3N1iX00DaVrP+RCLaj1HJjG
-Ey5U
+          
+          <ds:KeyInfo>
+            
+            <ds:X509Data>
+              
+              <ds:X509Certificate>
+MIICqzCCAZOgAwIBAgIGAZB+fNBWMA0GCSqGSIb3DQEBCwUAMBYxFDASBgNVBAMMC1Rlc3QgSXNz
+dWVyMB4XDTI0MDcwNDE2MDM0N1oXDTI1MDcwNDE2MDM0N1owFzEVMBMGA1UEAwwMVGVzdCBTdWJq
+ZWN0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA08C2Be4sKYWCXEV9ibr7aah1BfcE
+7w46dNcK/R4WHzlsElkqE+zbaRi1HVfexX+h1qQ/2UITZ0pFuqF00YIu2TdlebKXuj4dSIdN0siU
+0dj81NQunM+/W6gKQH3ypMfW50VVHACEbieXf9bV5uLT0k4mgVkW2hBbKOsR5+w+vnDTOInoNPHP
+5xDGbGc3GZ2ZXxI3ChoRqBiINSDTYqZTZIHrjxTVxnbpXq7CUHVXxHCvpOmKTvehMXIcsOFkjchf
+nAh70k/jNj+aBoe/m00MzCOilVFkvLb5vELVSEd2M+1Y1JpQaPrsw75lTiAxDhHue3nfE6l9APmB
+lUMNdGDHwQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBtIAWqIjHAwaDM8R8YDKwnC7BWyoy1d7Fv
+APX6hrO2lqlxiLXGNolScPnOJub+hriFNzAzCgpOuTRAwOQoZyUVN7BqOYely5aXIbEfZ0ZUbxvY
+uSJcI87JAsp9ac7Hvq7RTDgR+KVTvpjmedcQj7IfYqz146wGL2tGUFwaDnz1KahRxqDoBLfDaLl1
+UV3TH59re6nOZGVP4CC9T9533o/coWhVr8IkaJnP5npK47rlOA5ugHHRqLUGVx/9CwU6U8+taUiH
+WoCV2HRLmw0MBFGq5RKRscb3qu8zCrnZ0Bdb7wTm3odRvoFYTprvV1bjx3MpaHIGU3dIMoNv37hQ
+hjPi
 </ds:X509Certificate>
-</ds:X509Data>
-</ds:KeyInfo>
-<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-e67c4b64-f31e-4cd2-8f31-a5a498bb2e38"><xades:SignedProperties Id="xmldsig-e67c4b64-f31e-4cd2-8f31-a5a498bb2e38-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-07-04T23:02:18.492+08:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>mVcJGorVLMf2QzuR0Ti3Sm3YTy+uoXcsshoWHNFMgWg=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>cn=Test Issuer</ds:X509IssuerName><ds:X509SerialNumber>1720105337724</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
-</ds:Signature></output>
+              
+            </ds:X509Data>
+            
+          </ds:KeyInfo>
+          
+          <ds:Object>
+            <xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-49fefc01-66ab-4927-901c-9d342f3d91d6">
+              <xades:SignedProperties Id="xmldsig-49fefc01-66ab-4927-901c-9d342f3d91d6-signedprops">
+                <xades:SignedSignatureProperties>
+                  <xades:SigningTime>2024-07-05T00:03:48.143+08:00</xades:SigningTime>
+                  <xades:SigningCertificate>
+                    <xades:Cert>
+                      <xades:CertDigest>
+                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                        <ds:DigestValue>rJp05+e80bI4Eek6Dch96L5ZNIxnBwo5fS/e587rNqM=</ds:DigestValue>
+                      </xades:CertDigest>
+                      <xades:IssuerSerial>
+                        <ds:X509IssuerName>cn=Test Issuer</ds:X509IssuerName>
+                        <ds:X509SerialNumber>1720109027414</ds:X509SerialNumber>
+                      </xades:IssuerSerial>
+                    </xades:Cert>
+                  </xades:SigningCertificate>
+                </xades:SignedSignatureProperties>
+              </xades:SignedProperties>
+            </xades:QualifyingProperties>
+          </ds:Object>
+          
+        </ds:Signature>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+    
+  <cbc:ID>DEVJ01021000000102024</cbc:ID>
+    
+  <cbc:IssueDate>2024-07-03</cbc:IssueDate>
+    
+  <cbc:IssueTime>11:54:19Z</cbc:IssueTime>
+    
+  <cbc:InvoiceTypeCode listVersionID="1.0">01</cbc:InvoiceTypeCode>
+    
+  <cbc:DocumentCurrencyCode>USD</cbc:DocumentCurrencyCode>
+    
+  <cac:InvoicePeriod/>
+    
+  <cac:BillingReference>
+        
+    <cac:AdditionalDocumentReference>
+            
+      <cbc:ID/>
+          
+    </cac:AdditionalDocumentReference>
+      
+  </cac:BillingReference>
+    
+  <cac:AdditionalDocumentReference>
+        
+    <cbc:ID>FTA</cbc:ID>
+        
+    <cbc:DocumentType>FreeTradeAgreement</cbc:DocumentType>
+        
+    <cbc:DocumentDescription/>
+      
+  </cac:AdditionalDocumentReference>
+    
+  <cac:AdditionalDocumentReference>
+        
+    <cbc:ID/>
+        
+    <cbc:DocumentType>K2</cbc:DocumentType>
+      
+  </cac:AdditionalDocumentReference>
+    
+  <cac:AdditionalDocumentReference>
+        
+    <cbc:ID/>
+        
+    <cbc:DocumentType>CustomsImportForm</cbc:DocumentType>
+      
+  </cac:AdditionalDocumentReference>
+    
+  <cac:AccountingSupplierParty>
+        
+    <cbc:AdditionalAccountID/>
+        
+    <cac:Party>
+            
+      <cbc:IndustryClassificationCode name="Manufacture of consumer electronics">26400</cbc:IndustryClassificationCode>
+            
+      <cac:PartyIdentification>
+                
+        <cbc:ID schemeID="TIN">C892739010</cbc:ID>
+              
+      </cac:PartyIdentification>
+            
+      <cac:PartyIdentification>
+                
+        <cbc:ID schemeID="BRN">197801005158</cbc:ID>
+              
+      </cac:PartyIdentification>
+            
+      <cac:PartyIdentification>
+                
+        <cbc:ID schemeID="SST">NA</cbc:ID>
+              
+      </cac:PartyIdentification>
+            
+      <cac:PartyIdentification>
+                
+        <cbc:ID schemeID="TTX">NA</cbc:ID>
+              
+      </cac:PartyIdentification>
+            
+      <cac:PostalAddress>
+                
+        <cbc:CityName>SENAI</cbc:CityName>
+                
+        <cbc:PostalZone>81400</cbc:PostalZone>
+                
+        <cbc:CountrySubentityCode>01</cbc:CountrySubentityCode>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line>S2 for testing</cbc:Line>
+                  
+        </cac:AddressLine>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line/>
+                  
+        </cac:AddressLine>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line>PLO No1 KWS PERINDUSTRIAN SENAI</cbc:Line>
+                  
+        </cac:AddressLine>
+                
+        <cac:Country>
+                    
+          <cbc:IdentificationCode listAgencyID="6" listID="ISO3166-1">MYS</cbc:IdentificationCode>
+                  
+        </cac:Country>
+              
+      </cac:PostalAddress>
+            
+      <cac:PartyLegalEntity>
+                
+        <cbc:RegistrationName>PSNM</cbc:RegistrationName>
+              
+      </cac:PartyLegalEntity>
+            
+      <cac:Contact>
+                
+        <cbc:Telephone>076987912590</cbc:Telephone>
+                
+        <cbc:ElectronicMail/>
+              
+      </cac:Contact>
+          
+    </cac:Party>
+      
+  </cac:AccountingSupplierParty>
+    
+  <cac:AccountingCustomerParty>
+        
+    <cbc:AdditionalAccountID/>
+        
+    <cac:Party>
+            
+      <cbc:IndustryClassificationCode/>
+            
+      <cac:PartyIdentification>
+                
+        <cbc:ID schemeID="TIN">EI00000000010</cbc:ID>
+              
+      </cac:PartyIdentification>
+            
+      <cac:PartyIdentification>
+                
+        <cbc:ID schemeID="NRIC">820315075140</cbc:ID>
+              
+      </cac:PartyIdentification>
+            
+      <cac:PartyIdentification>
+                
+        <cbc:ID schemeID="SST">NA</cbc:ID>
+              
+      </cac:PartyIdentification>
+            
+      <cac:PostalAddress>
+                
+        <cbc:CityName>SHAH ALAM, SELANGOR.</cbc:CityName>
+                
+        <cbc:PostalZone>40460</cbc:PostalZone>
+                
+        <cbc:CountrySubentityCode>10</cbc:CountrySubentityCode>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line>NO.13, JLN ANGGERIK VANILLA 31/98Q,</cbc:Line>
+                  
+        </cac:AddressLine>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line>SEC 31, KOTA KEMUNING,</cbc:Line>
+                  
+        </cac:AddressLine>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line/>
+                  
+        </cac:AddressLine>
+                
+        <cac:Country>
+                    
+          <cbc:IdentificationCode listAgencyID="6" listID="ISO3166-1">MYS</cbc:IdentificationCode>
+                  
+        </cac:Country>
+              
+      </cac:PostalAddress>
+            
+      <cac:PartyLegalEntity>
+                
+        <cbc:RegistrationName>CL FACTORY AUTOMATION SDN BHD  NO.13, JLN ANGGERIK VANILLA 31/98Q, SEC 31, KOTA KEMUNING,</cbc:RegistrationName>
+              
+      </cac:PartyLegalEntity>
+            
+      <cac:Contact>
+                
+        <cbc:Telephone>012-3450428</cbc:Telephone>
+                
+        <cbc:ElectronicMail/>
+              
+      </cac:Contact>
+          
+    </cac:Party>
+      
+  </cac:AccountingCustomerParty>
+    
+  <cac:Delivery>
+        
+    <cac:DeliveryParty>
+            
+      <cac:PostalAddress>
+                
+        <cbc:CityName/>
+                
+        <cbc:PostalZone/>
+                
+        <cbc:CountrySubentityCode/>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line/>
+                  
+        </cac:AddressLine>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line/>
+                  
+        </cac:AddressLine>
+                
+        <cac:AddressLine>
+                    
+          <cbc:Line/>
+                  
+        </cac:AddressLine>
+                
+        <cac:Country>
+                    
+          <cbc:IdentificationCode listAgencyID="6" listID="ISO3166-1"/>
+                  
+        </cac:Country>
+              
+      </cac:PostalAddress>
+            
+      <cac:PartyLegalEntity>
+                
+        <cbc:RegistrationName/>
+              
+      </cac:PartyLegalEntity>
+          
+    </cac:DeliveryParty>
+        
+    <cac:Shipment>
+            
+      <cbc:ID/>
+            
+      <cac:FreightAllowanceCharge>
+                
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+                
+        <cbc:AllowanceChargeReason/>
+                
+        <cbc:Amount currencyID="USD">0.00 </cbc:Amount>
+              
+      </cac:FreightAllowanceCharge>
+          
+    </cac:Shipment>
+      
+  </cac:Delivery>
+    
+  <cac:PaymentMeans>
+        
+    <cbc:PaymentMeansCode/>
+        
+    <cac:PayeeFinancialAccount>
+            
+      <cbc:ID/>
+          
+    </cac:PayeeFinancialAccount>
+      
+  </cac:PaymentMeans>
+    
+  <cac:PaymentTerms>
+        
+    <cbc:Note>0001</cbc:Note>
+      
+  </cac:PaymentTerms>
+    
+  <cac:PrepaidPayment>
+        
+    <cbc:ID/>
+        
+    <cbc:PaidAmount currencyID="USD">0.00 </cbc:PaidAmount>
+      
+  </cac:PrepaidPayment>
+    
+  <cac:AllowanceCharge>
+        
+    <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+        
+    <cbc:AllowanceChargeReason/>
+        
+    <cbc:Amount currencyID="USD">0</cbc:Amount>
+      
+  </cac:AllowanceCharge>
+    
+  <cac:AllowanceCharge>
+        
+    <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        
+    <cbc:AllowanceChargeReason/>
+        
+    <cbc:Amount currencyID="USD">0</cbc:Amount>
+      
+  </cac:AllowanceCharge>
+    
+  <cac:TaxTotal>
+        
+    <cbc:TaxAmount currencyID="USD">0</cbc:TaxAmount>
+        
+    <cac:TaxSubtotal>
+            
+      <cbc:TaxableAmount currencyID="USD">2000.00</cbc:TaxableAmount>
+            
+      <cbc:TaxAmount currencyID="USD">0</cbc:TaxAmount>
+            
+      <cac:TaxCategory>
+                
+        <cbc:ID>06</cbc:ID>
+                
+        <cbc:Percent>0</cbc:Percent>
+                
+        <cbc:TaxExemptionReason/>
+                
+        <cac:TaxScheme>
+                    
+          <cbc:ID schemeAgencyID="6" schemeID="UN/ECE 5153">OTH</cbc:ID>
+                  
+        </cac:TaxScheme>
+              
+      </cac:TaxCategory>
+          
+    </cac:TaxSubtotal>
+      
+  </cac:TaxTotal>
+    
+  <cac:LegalMonetaryTotal>
+        
+    <cbc:LineExtensionAmount currencyID="USD">2000.00</cbc:LineExtensionAmount>
+        
+    <cbc:TaxExclusiveAmount currencyID="USD">2000.00</cbc:TaxExclusiveAmount>
+        
+    <cbc:TaxInclusiveAmount currencyID="USD">2000.00</cbc:TaxInclusiveAmount>
+        
+    <cbc:AllowanceTotalAmount currencyID="USD">0</cbc:AllowanceTotalAmount>
+        
+    <cbc:ChargeTotalAmount currencyID="USD">0</cbc:ChargeTotalAmount>
+        
+    <cbc:PayableRoundingAmount currencyID="USD">-1000.00</cbc:PayableRoundingAmount>
+        
+    <cbc:PayableAmount currencyID="USD">1000.00</cbc:PayableAmount>
+      
+  </cac:LegalMonetaryTotal>
+    
+  <cac:InvoiceLine>
+        
+    <cbc:ID>001</cbc:ID>
+        
+    <cbc:InvoicedQuantity>0</cbc:InvoicedQuantity>
+        
+    <cbc:LineExtensionAmount currencyID="USD">1000.00</cbc:LineExtensionAmount>
+        
+    <cac:AllowanceCharge>
+            
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+            
+      <cbc:AllowanceChargeReason>TBD</cbc:AllowanceChargeReason>
+            
+      <cbc:MultiplierFactorNumeric>0</cbc:MultiplierFactorNumeric>
+            
+      <cbc:Amount currencyID="USD">0</cbc:Amount>
+          
+    </cac:AllowanceCharge>
+        
+    <cac:AllowanceCharge>
+            
+      <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+            
+      <cbc:MultiplierFactorNumeric>0</cbc:MultiplierFactorNumeric>
+            
+      <cbc:Amount currencyID="USD">0</cbc:Amount>
+          
+    </cac:AllowanceCharge>
+        
+    <cac:TaxTotal>
+            
+      <cbc:TaxAmount currencyID="USD">0</cbc:TaxAmount>
+            
+      <cac:TaxSubtotal>
+                
+        <cbc:TaxableAmount currencyID="USD">1000.00</cbc:TaxableAmount>
+                
+        <cbc:TaxAmount currencyID="USD">0</cbc:TaxAmount>
+                
+        <cac:TaxCategory>
+                    
+          <cbc:ID>06</cbc:ID>
+                    
+          <cbc:Percent>0</cbc:Percent>
+                    
+          <cbc:TaxExemptionReason/>
+                    
+          <cac:TaxScheme>
+                        
+            <cbc:ID schemeAgencyID="6" schemeID="UN/ECE 5153">OTH</cbc:ID>
+                      
+          </cac:TaxScheme>
+                  
+        </cac:TaxCategory>
+              
+      </cac:TaxSubtotal>
+          
+    </cac:TaxTotal>
+        
+    <cac:Item>
+            
+      <cbc:Description>e-Invoicing Testing</cbc:Description>
+            
+      <cac:OriginCountry>
+                
+        <cbc:IdentificationCode/>
+              
+      </cac:OriginCountry>
+            
+      <cac:CommodityClassification>
+                
+        <cbc:ItemClassificationCode listID="CLASS">022</cbc:ItemClassificationCode>
+              
+      </cac:CommodityClassification>
+          
+    </cac:Item>
+        
+    <cac:Price>
+            
+      <cbc:PriceAmount currencyID="USD">1000.00</cbc:PriceAmount>
+          
+    </cac:Price>
+        
+    <cac:ItemPriceExtension>
+            
+      <cbc:Amount currencyID="USD">1000.00</cbc:Amount>
+          
+    </cac:ItemPriceExtension>
+      
+  </cac:InvoiceLine>
+    
+  <cac:InvoiceLine>
+        
+    <cbc:ID>002</cbc:ID>
+        
+    <cbc:InvoicedQuantity>0</cbc:InvoicedQuantity>
+        
+    <cbc:LineExtensionAmount currencyID="USD">1000.00</cbc:LineExtensionAmount>
+        
+    <cac:AllowanceCharge>
+            
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+            
+      <cbc:AllowanceChargeReason>TBD</cbc:AllowanceChargeReason>
+            
+      <cbc:MultiplierFactorNumeric>0</cbc:MultiplierFactorNumeric>
+            
+      <cbc:Amount currencyID="USD">0</cbc:Amount>
+          
+    </cac:AllowanceCharge>
+        
+    <cac:AllowanceCharge>
+            
+      <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+            
+      <cbc:MultiplierFactorNumeric>0</cbc:MultiplierFactorNumeric>
+            
+      <cbc:Amount currencyID="USD">0</cbc:Amount>
+          
+    </cac:AllowanceCharge>
+        
+    <cac:TaxTotal>
+            
+      <cbc:TaxAmount currencyID="USD">0</cbc:TaxAmount>
+            
+      <cac:TaxSubtotal>
+                
+        <cbc:TaxableAmount currencyID="USD">1000.00</cbc:TaxableAmount>
+                
+        <cbc:TaxAmount currencyID="USD">0</cbc:TaxAmount>
+                
+        <cac:TaxCategory>
+                    
+          <cbc:ID>06</cbc:ID>
+                    
+          <cbc:Percent>0</cbc:Percent>
+                    
+          <cbc:TaxExemptionReason/>
+                    
+          <cac:TaxScheme>
+                        
+            <cbc:ID schemeAgencyID="6" schemeID="UN/ECE 5153">OTH</cbc:ID>
+                      
+          </cac:TaxScheme>
+                  
+        </cac:TaxCategory>
+              
+      </cac:TaxSubtotal>
+          
+    </cac:TaxTotal>
+        
+    <cac:Item>
+            
+      <cbc:Description>MISCELLANEOUS INCOME</cbc:Description>
+            
+      <cac:OriginCountry>
+                
+        <cbc:IdentificationCode/>
+              
+      </cac:OriginCountry>
+            
+      <cac:CommodityClassification>
+                
+        <cbc:ItemClassificationCode listID="CLASS">022</cbc:ItemClassificationCode>
+              
+      </cac:CommodityClassification>
+          
+    </cac:Item>
+        
+    <cac:Price>
+            
+      <cbc:PriceAmount currencyID="USD">1000.00</cbc:PriceAmount>
+          
+    </cac:Price>
+        
+    <cac:ItemPriceExtension>
+            
+      <cbc:Amount currencyID="USD">1000.00</cbc:Amount>
+          
+    </cac:ItemPriceExtension>
+      
+  </cac:InvoiceLine>
+  
+</Invoice>
